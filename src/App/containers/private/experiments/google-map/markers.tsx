@@ -33,10 +33,10 @@ const Markers: React.FC<TMarkers> = ({ googleMap }) => {
         return;
       }
 
-      /* Remove prev. marker from the map */
+      /** Remove prev. marker from the map */
       marker?.setMap(null);
 
-      /* Set new marker */
+      /** Set new marker */
       const newMarker = new google.maps.Marker({
         position: addresses[curAddressSelect].geometry.location,
         title: "Hello World!",
@@ -45,7 +45,7 @@ const Markers: React.FC<TMarkers> = ({ googleMap }) => {
       newMarker.setMap(googleMap);
       setMarker(newMarker);
 
-      /* Center map */
+      /** Center map */
       googleMap.setCenter(addresses[curAddressSelect].geometry.location);
     },
     [addresses, googleMap, marker]
