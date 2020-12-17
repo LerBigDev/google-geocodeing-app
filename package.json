@@ -14,6 +14,7 @@
     "@types/react-router-dom": "^5.1.6",
     "@types/redux": "^3.6.0",
     "@types/styled-components": "^5.1.5",
+    "antd": "^4.9.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -28,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +52,14 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/node-logger": "^6.1.11",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.11",
     "@types/googlemaps": "^3.40.5",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

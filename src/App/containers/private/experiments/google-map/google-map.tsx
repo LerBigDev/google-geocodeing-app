@@ -7,6 +7,7 @@ const Root = styled.div`
   width: 100%;
   height: 100%;
 `;
+
 const Map = styled.div`
   width: 500px;
   height: 500px;
