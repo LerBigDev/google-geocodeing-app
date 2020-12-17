@@ -8,9 +8,9 @@ const initValue: TAppState = {
 const reducer = (state: TAppState = initValue, action: TReducerActions) => {
   switch (action.type) {
     case EAction.SetPlaceFrom:
-      break;
+      return { ...state };
     case EAction.SetPlaceTo:
-      break;
+      return { ...state };
     default:
       return state;
   }
