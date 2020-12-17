@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, useHistory } from "react-router-dom";
 import { Switch } from "react-router-dom";
-import GoogleMapPage from "./private/experiments/google-map";
+import GoogleMapPage from "./containers/private/experiments/google-map";
 
 function App() {
   const history = useHistory();
